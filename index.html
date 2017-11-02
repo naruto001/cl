@@ -11,6 +11,10 @@
 		<script src="js/jquery.ui.min.js"></script>
 		<script src="js/jquery.superslide.js"></script>
 		<script src="js/respond.min.js"></script> 
+		<style>
+		
+
+		</style>
 	</head>
 	<body>
 		<!-- nav -->
@@ -91,27 +95,35 @@
 
 		<!-- fullpage -->
 		<div id="fullpage" class="fullpage">
-			<!-- part1 -->
+			<!-- section1 -->
 			<div class="section section1">
 				<!-- show_pic -->
 				<div class="slide_pic">
 					<div class="bd">
 						<ul class="clear">
 							<li class="pic01">
-								<div class="pic01_img"></div>
-								<div class="pic01_txt"></div>
+								<div class="wrap01">
+									<div class="pic0_img"></div>
+									<div class="pic0_txt"></div>
+								</div>
 							</li>
 							<li class="pic02">
-								<div class="pic02_img"></div>
-								<div class="pic02_txt"></div>
+								<div class="wrap02">
+									<div class="pic1_img"></div>
+									<div class="pic1_txt"></div>
+								</div>
 							</li>
 							<li class="pic03">
-								<div class="pic03_img"></div>
-								<div class="pic03_txt"></div>
+								<div class="wrap03">
+									<div class="pic2_img"></div>
+									<div class="pic2_txt"></div>
+								</div>
 							</li>
 							<li class="pic04">
-								<div class="pic01_img"></div>
-								<div class="pic01_txt"></div>
+								<div class="wrap04">
+									<div class="pic3_img"></div>
+									<div class="pic3_txt"></div>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -126,12 +138,83 @@
 				</div>
 				<!-- end show_pic -->
 			</div>
-			<!-- end part1 -->
-			<div class="section section2"></div>
+			<!-- end section1 -->
+
+			<!-- section2 -->
+			<div class="section section2">
+			    <div class="bg"><img src="img/section3.jpg" alt=""></div>
+			    <div class="bg31"></div>
+			    <div class="bg32"></div>
+			    <div class="bg33"></div>
+			    <strong>[ 视觉化交互设计 ]</strong>
+			    <h3>心随眼动，感官直接体验</h3>
+			    <p class="p3">邮箱 6.0
+			        版采用了全新的视觉化交互设计，通过对界面的整体风格设计、重要信息的视觉化处理以及元素本身的视觉传达优化，来实现产品流程设计和交互行为塑造。从视觉的角度出发，让用户无需多想，直接通过感官与产品进行交互。</p>
+			</div>
+			<!-- end section2 -->
 			<div class="section section3"></div>
 			<div class="section section4"></div>
 			<div class="section section5"></div>
 			<div class="section section6"></div>
 		</div>
+		<style>
+			.section {
+	            position: relative;
+	            overflow: hidden;
+	        }
+			.section .bg {
+				position:absolute;
+				left:0;
+				top:0;
+				width:100%;
+				height:100%;
+			}
+			.section .bg img {
+				display:block;
+				width:100%;
+				height:100%;
+			}
+			.bg31 {
+				position:absolute;
+				left:50%;
+				bottom:0;
+				width:892px;
+				height:472px;
+				margin-left:-396px;
+				margin-bottom:80px;
+				background:url(../img/bg31.png);
+				opacity:0;
+				transition:all 1s;
+			}
+			.bg32 {
+				position:absolute;
+				left:50%;
+				bottom:0;
+				width:892px;
+				height:472px;
+				margin-left:-396px;
+				background:url(../img/bg32.png) no-repeat 47px bottom;
+				opacity:0;
+				transition:all 1s;
+			}
+			.bg33 {
+				position:absolute;
+				left:50%;
+				bottom:0;
+				width:441px;
+				height:380px;
+				margin-left:50%;
+				background:url(../img/bg33.png) no-repeat;
+				opacity:0;
+				transition:all 1s;
+			}
+			.section strong {
+				position:absolute;
+				left:50%;
+				top:15%;
+				
+			}
+
+		</style>
 	</body>
 </html>

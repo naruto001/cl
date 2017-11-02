@@ -18,6 +18,7 @@ $( function () {
 	} );
 
 	//轮播图
+	var slide_pic = [170, 568, 830,568];
 	$('.slide_pic').slide({
 		titCell:".hd ul li",
 		mainCell:".bd ul",
@@ -26,6 +27,24 @@ $( function () {
 		trigger:"mouseover",
 		autoPlay:true,
 		interTime:5000,
-		delayTime:300
+		delayTime:300,
+		startFun:function (i,c) {
+
+			for(var j=0; j<4; j++) {
+				$('.pic'+j+'_img').stop(true,true);
+				$('.pic'+j+'_txt').stop(true,true);
+				$('.pic' + j + '_img').removeAttr('style');
+				$('.pic' + j + '_txt').removeAttr('style');
+			};
+
+			$('.pic'+i+'_img').animate({
+				left:'0',
+				opacity:'1'
+			},900);
+			$('.pic'+i+'_txt').animate({
+				left:slide_pic[i],
+				opacity:'1'
+			},900 );
+		}
 	})
 } )
